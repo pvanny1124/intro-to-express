@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<h1>You fell in love with: <%=thingVar.toUpperCase()%></h1>
+
+<!-- IF STATEMENTS IN EJS --> 
+<% if(thingVar.toLowerCase() === "rusty"){ %>
+    <p>GOOD CHOICE! RUSTY IS THE BEST!</p>
+<% } else { %>
+    <p>BAD CHOICE! YOU SHOULD HAVE PICKED RUSTY</p>
+<% } %>
+
+<p>PS this is the EJS file</p>
+
+<% include partials/footer %>
